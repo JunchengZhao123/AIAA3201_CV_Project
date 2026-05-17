@@ -1,0 +1,18 @@
+# Part 3 config: DL3DV-2
+
+dataset_type: dl3dv
+n_interp: 5
+alpha_photo: 4.0
+
+# Hybrid training
+total_iterations: 15000
+beta_max: 0.6
+beta_warmup: 1500
+pseudo_ratio: 0.45
+lambda_dssim: 0.2
+
+# Difix3D
+difix_strength: 0.2
+
+# DL3DV has 1/30 sparsity -> larger gaps, benefit from more interpolations
+# Slightly higher beta to leverage more generated content

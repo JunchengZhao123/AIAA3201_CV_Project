@@ -1,0 +1,18 @@
+# Part 3 config: Waymo-405841
+
+dataset_type: waymo
+n_interp: 3
+alpha_photo: 5.0
+
+# Hybrid training
+total_iterations: 15000
+beta_max: 0.5
+beta_warmup: 2000
+pseudo_ratio: 0.4
+lambda_dssim: 0.2
+
+# Difix3D enhancement strength (tau~200 maps to strength=0.2)
+difix_strength: 0.2
+
+# Waymo-specific: larger scene, more conservative pseudo weighting
+# Outdoor driving scenes benefit from more pseudo-views due to large gaps

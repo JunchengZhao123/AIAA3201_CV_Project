@@ -1,0 +1,39 @@
+inherit_from: "configs/mono/waymo_sparse/base_config.yaml"
+
+Dataset:
+  dataset_path: "datasets/waymo_sparse/405841/FRONT"
+  Calibration:
+    fx: 2066.697564417299
+    fy: 2066.697564417299
+    cx: 950.5512774150723
+    cy: 641.1870541472169
+    k1: 0.036260226499726975
+    k2: -0.35323300768499216
+    p1: 0.0003256378403347263
+    p2: 0.00021755891240936618
+    k3: 0
+    width: 1920
+    height: 1280
+    depth_scale: 5000.0
+    distorted: True
+    png_depth_scale: 5000.0
+
+opt_params:
+  position_lr_init: 0.0008
+  position_lr_final: 0.00008
+  init_lr: 3
+  feature_lr: 0.005
+  opacity_lr: 0.05
+  scaling_lr: 0.002
+  rotation_lr: 0.002
+  densify_grad_threshold: 0.00015
+
+Training:
+  alpha: 0.92
+  mapping_itr_nosingle: 150
+  tracking_itr_num: 250
+  gaussian_update_every: 80
+  gaussian_update_offset: 25
+  gaussian_reset: 1200
+  gaussian_th: 0.5
+  init_itr_num: 2500

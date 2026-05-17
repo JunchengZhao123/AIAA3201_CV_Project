@@ -1,0 +1,18 @@
+# Part 3 config: Re10k-1
+
+dataset_type: re10k
+n_interp: 5
+alpha_photo: 4.0
+
+# Hybrid training
+total_iterations: 15000
+beta_max: 0.6
+beta_warmup: 1500
+pseudo_ratio: 0.45
+lambda_dssim: 0.2
+
+# Difix3D
+difix_strength: 0.2
+
+# Re10k indoor scene with 1/30 sparsity
+# Indoor scenes tend to have less texture -> higher confidence threshold helps
