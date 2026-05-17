@@ -74,6 +74,9 @@ A progressive pipeline for sparse-view 3D reconstruction, covering initializatio
 
 The submitted GitHub repository is mainly intended to provide the project scripts and documentation. Large datasets, generated results, and third-party research codebases are not stored in this repo. Reproduce the working tree by cloning this repo first, then cloning the required external projects beside `scripts/`.
 
+### Dataset
+Download from: https://drive.google.com/drive/folders/1euG7pnbFowljVWoNLcbCmil81IVsIEfM / https://pan.baidu.com/s/1Sa18zCeYiYA2gWAllo11dg?pwd=p3bm
+
 ### Clone This Project / Scripts
 
 Full clone:
